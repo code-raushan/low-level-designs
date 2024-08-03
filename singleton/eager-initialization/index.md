@@ -1,0 +1,1 @@
+- Issue with Lazy initialization is it does not solve multithreading issues when multiple threads would try access the static method of getCache. We only need the cache-service to initialized only one time so better to create the instance when the class is loaded.
